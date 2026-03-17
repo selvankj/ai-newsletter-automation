@@ -1,8 +1,8 @@
 # 🚀 AI Newsletter Automation
 
-A fully automated, serverless pipeline that aggregates, summarizes, and delivers AI news using LLMs — in under 20 seconds.
+An end-to-end AI-powered pipeline that automatically discovers, summarizes, and delivers the latest AI news — in under 20 seconds.
 
-Built with AWS Lambda, Amazon Bedrock (Claude), SES, and S3.
+⚙️ Built using AWS Lambda, Amazon Bedrock (Claude), SES, and S3 for a fully serverless, production-ready workflow.
 
 ---
 
@@ -71,14 +71,18 @@ This system automates the entire workflow — from content discovery to summariz
 
 ### 1. Clone the Repository
 
+```bash
 git clone https://github.com/selvankj/ai-newsletter-automation.git
 cd ai-newsletter-automation
+```
 
 ---
 
 ### 2. Install Dependencies
 
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
@@ -86,10 +90,12 @@ pip install -r requirements.txt
 
 Set the following variables in AWS Lambda (or locally):
 
-SENDER_EMAIL=[your-email@example.com](mailto:your-email@example.com)
-RECIPIENT_EMAIL=[recipient@example.com](mailto:recipient@example.com)
+```bash
+SENDER_EMAIL=your-email@example.com
+RECIPIENT_EMAIL=recipient@example.com
 S3_BUCKET=your-s3-bucket-name
 AWS_REGION=your-region
+```
 
 ---
 
@@ -105,7 +111,9 @@ AWS_REGION=your-region
 
 Run manually:
 
+```bash
 python lambda_function.py
+```
 
 Or schedule weekly using EventBridge.
 
@@ -113,12 +121,14 @@ Or schedule weekly using EventBridge.
 
 ## 📂 Project Structure
 
+```bash
 ai-newsletter-automation/
 ├── lambda_function.py
 ├── requirements.txt
 ├── README.md
 ├── newsletter-sample.png
 ├── ai_newsletter_architecture.svg
+```
 
 ---
 
@@ -127,6 +137,15 @@ ai-newsletter-automation/
 * Ensure AWS SES is out of sandbox for email delivery
 * Verify sender and recipient emails
 * Configure IAM roles with required permissions
+
+---
+
+## ✅ Reliability
+
+* Handles failures in RSS feeds gracefully
+* Fallback handling for LLM response parsing
+* Designed for repeatable, scheduled execution
+* Tested with multiple AI content sources
 
 ---
 
