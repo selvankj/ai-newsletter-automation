@@ -3,6 +3,14 @@
 An end-to-end serverless system that automatically curates, summarizes, and delivers a weekly AI newsletter using large language models and real-time data sources.
 
 ---
+## 🚀 Project Highlights
+
+- Fully automated AI newsletter pipeline (0 manual effort)
+- Aggregates 10+ AI sources (news, blogs, research, GitHub)
+- Uses AWS Bedrock (Claude) for structured summarization
+- Generates production-ready HTML emails
+- Sends via AWS SES + archives in S3
+- End-to-end runtime: ~10–20 seconds
 
 ## 🚀 Overview
 
