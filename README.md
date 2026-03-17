@@ -109,6 +109,10 @@ lambda_function.lambda_handler
 
 ---
 
+## 📸 Sample Output
+
+![AI Newsletter](newsletter-sample.png)
+
 ### Schedule (Weekly)
 
 Use EventBridge:
