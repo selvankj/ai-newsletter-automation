@@ -1,12 +1,12 @@
 import boto3, json, feedparser, datetime, urllib.request, html
 
-REGION    = 'ap-south-1'
-S3_BUCKET = 'ai-newsletter-archive-thiru'
-SENDER    = 'thirumalaiselvan.janakiraman@ideas2it.com'
+REGION    = 'ap-south-1'  # 🔴 CHANGE if needed
+S3_BUCKET = 'ai-newsletter-archive-XYZ' # 🔴 CHANGE
+SENDER    = 'sender@youremail.com'  # 🔴 CHANGE (must be SES verified)
 MODEL_ID  = 'anthropic.claude-haiku-20240307-v1:0'
 
 SUBSCRIBERS = [
-    {"email": "thirumalaiselvan.janakiraman@ideas2it.com", "name": "Thiru"},
+    {"email": "receiver@youremail.com", "name": "Receiver"}, # 🔴 CHANGE
 ]
 
 RSS_FEEDS = [
